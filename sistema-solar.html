@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 1</title>
+    <title>Sistema Solar</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
         div {
             display: flex;
             flex-direction: column;
@@ -46,10 +49,10 @@
             background: linear-gradient(180deg, #c300ff, #000);
             box-shadow: 0px 0px 15px rgb(255, 255, 255);
             padding: 50px;
-            height: 330px;
-            width: 330px;
+            height: 360px;
+            width: 360px;
             border-radius: 50%;
-            font-size: 20px;
+            font-size: 15px;
         }
 
         p:hover {
@@ -65,6 +68,8 @@
         .sistema>div {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .planetas {
@@ -110,9 +115,7 @@
         </div>
         <div>
             <h2>Terra</h2>
-            <p style="background: linear-gradient(
-  180deg,
-  #fff,#0F4C75, #2276BC, #65C547);">
+            <p style="background: linear-gradient(180deg, #fff,#0F4C75, #2276BC, #65C547);">
                 A Terra é o
                 terceiro planeta a partir do Sol e o único conhecido por abrigar vida. Possui uma atmosfera rica
                 em
@@ -163,7 +166,7 @@
         </div>
         <div>
             <h2>Outros Corpos Celestes</h2>
-            <p style="background: linear-gradient(180deg,#ff0040ab, #000); font-size: 18px;">Além dos planetas e do Sol,
+            <p style="background: linear-gradient(180deg,#ff0040ab, #000);">Além dos planetas e do Sol,
                 o Sistema Solar
                 abriga outros corpos, como asteroides, localizados
                 principalmente
